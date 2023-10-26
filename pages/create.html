@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="create.css">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/ccfaee2749.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div style="background-color: #F1F3F6;">
+        <ul class="nav-ul">
+          <li class="nav-li"><a href="#" onclick="openNav()"><i class="fa fa-bars"></i></a></li>
+          <li class="nav-li"><a href="#" id="home-nav-btn" onclick="handelSearch()"><i class="fa fa-search"></i></a>
+          </li>
+          <li class="nav-li"><a href="../index.html">Home</a></li>
+          <li class="nav-li"><a href="./pages/create.html">News</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </li>
+          <li class="nav-li-right w3-large"><a href="#"><i class="fa fa-user"></i></a></li>
+          <li class="nav-li-right  w3-large"><a href="#"><i class="fa fa-bell""><span class=" badge">3</span></i></a></li>
+        <!-- MOBILE View -->
+        <div class="nav-mobile-ul">
+          <div class="nav-mobile-li"><a href="#">
+              <h4>LOGO</h4>
+            </a></div>
+          <div class="nav-mobile-li"><a href="#" onclick="openNav()"><i class="fa fa-bars"></i></a></div>
+        </div>
+      </div>
+
+    <div class="create-container">
+        <h1>Add Employee</h1>
+        <form id="taskForm" class="emp-form">
+            <label for="taskName">First Name</label>
+            <input id="taskName" class="emp-input" type="text" name="name" placeholder="Employee Name" required>
+            <label for="taskage">First Name</label>
+            <input id="taskAge" class="emp-input" type="number" name="age" placeholder="Employee Age" required>
+            <button class="emp-btn" type="submit">Submit</button>
+        </form>
+    
+        <table class="create-table">
+            <tr class="create-row">
+                <th class="create-th">Roll.No</th>
+                <th class="create-th">Employee Name</th>
+                <th class="create-th">Employee.Age</th>
+                <th class="create-th">Edit</th>
+                <th class="create-th">Delete</th>
+            </tr>
+            <tbody id="taskList" class="create-tbody">
+    
+            </tbody>
+        </table>
+    </div>
+
+    <script type="text/javascript" src="./create.js"></script>
+
+</body>
+</html>

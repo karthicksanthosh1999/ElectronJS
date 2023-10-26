@@ -1,0 +1,113 @@
+.create-container {
+    margin: 25px;
+    border: .5px solid #ccc;
+}
+
+.emp-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.emp-input[type=text],
+.emp-input[type=number],
+.emp-input[type=email] {
+    width: 400px;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    font-size: 1rem;
+}
+
+.emp-input[type=text]:focus,
+.emp-input[type=number]:focus,
+.emp-input[type=email]:focus {
+    border: 1px solid #555;
+}
+
+.emp-btn {
+    color: #fff;
+    height: 50px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    width: 800px;
+    cursor: pointer;
+    background-color: #50975e;
+    transition: .5s;
+}
+
+.emp-btn:hover {
+    background-color: #1fa039;
+
+}
+
+.create-table {
+    border: 1px solid;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.create-table,
+.create-row,
+.create-th {
+    border: 1px solid;
+    text-align: left;
+    padding: 8px;
+}
+
+.hr-form-container {
+    padding: 30px;
+}
+
+.hr-labels {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.hr-req {
+    color: #ff0000;
+}
+
+/* ACCORDIAN */
+
+.hr-accordian .hr-accordian-contextbox {
+    position: relative;
+}
+
+.hr-accordian .hr-accordian-contextbox .hr-accordian-lable {
+    position: relative;
+}
+
+.hr-accordian .hr-accordian-contextbox .hr-accordian-lable::before {
+    content: '+';
+    position: absolute;
+    top: -13px;
+    right: 20px;
+    transform: translateY(50%);
+    font-size: 1.5em;
+}
+
+.hr-accordian .hr-accordian-contextbox.active .hr-accordian-lable::before {
+    content: '-';
+    color: #fff;
+}
+
+.hr-accordian .hr-accordian-contextbox .hr-accordian-content {
+    position: relative;
+    background: #2C3136;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.hr-accordian .hr-accordian-contextbox.active .hr-accordian-content {
+    height: 80px;
+    padding-left: 30px;
+}

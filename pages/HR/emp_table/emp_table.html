@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hr.css">
+    <link rel="stylesheet" href="../../../index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://kit.fontawesome.com/ccfaee2749.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+
+
+    <main>
+          <!-- NAVBAR -->
+          <div style="background-color: #F1F3F6;">
+            <ul class="nav-ul">
+                <li class="nav-li"><a href="#" onclick="openNav()"><i class="fa fa-bars"></i></a></li>
+                <li class="nav-li"><a href="#" id="home-nav-btn" onclick="handelSearch()"><i
+                            class="fa fa-search"></i></a>
+                </li>
+                <li class="nav-li"><a href="../sales/sales.html"> <i class="fa-solid fa-scale-balanced"></i> Sale</a>
+                </li>
+                <li class="nav-li"><a href="../HR/hr.html"> <i class="fa-regular fa-comment"></i> Customer Review</a>
+                </li>
+                <li class="nav-li"><a href="../HR/hr.html"> <i class="fa-solid fa-money-check-dollar"></i> Supplier
+                        Payment</a></li>
+                <li class="nav-li"><a href="../HR/hr.html"> <i class="fa-solid fa-cart-plus"></i> Purchase</a></li>
+                <li class="nav-li-right w3-large"><a href="#"><i class="fa fa-user"></i></a></li>
+                <li class="nav-li-right  w3-large"><a href="#"><i class="fa fa-bell""><span class="
+                            badge">3</span></i></a></li>
+                <!-- MOBILE View -->
+                <div class="nav-mobile-ul">
+                    <div class="nav-mobile-li"><a href="#">
+                            <h4>LOGO</h4>
+                        </a></div>
+                    <div class="nav-mobile-li"><a href="#" onclick="openNav()"><i class="fa fa-bars"></i></a></div>
+                </div>
+        </div>
+
+        <!-- DRAWER -->
+        <div>
+            <div id="nav-mySidenav" class="nav-sidenav">
+                <div class="app-logo">
+                    <img src="" alt="">
+                    <button href="#" class="nav-closebtn" onclick="closeNav()">&times;</button>
+                </div>
+                <div class="drawer-container">
+                    <img src="../../../img/profile.png" alt="profile"
+                        style="height: 60px; width: 60px; border-radius: 50%; border: 1px solid #000; outline-offset: 10px;">
+                    <p>JOSEPH KARTHICK</p>
+                    <P>ADMIN</P>
+                </div>
+
+                <div>
+                    <a href="../../../index.html"><i class="fa-solid fa-gauge"></i> Dashboard</a>
+                  </div>
+                  <div class="hr-accordian">
+                    <div class="hr-accordian-contextbox">
+                        <a href="#" class="hr-accordian-lable"><i class="fa-solid fa-users"></i> Human Resource</a>
+                        <div class="hr-accordian-content">
+                            <a href="../add_emp/hr.html">Add Employee</a>
+                            <a href="../emp_table/emp_table.html">Manage Employee</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#">inventory</a>
+                <a href="#">Sales Orders</a>
+                <a href="#">Puschases</a>
+                <a href="#">Finance</a>
+                <a href="#">Bill Of Material</a>
+                <a href="#">product Configuratr</a>
+                <a href="#">product Orders</a>
+                <a href="#">Meterial Requirements</a>
+            </div>
+        </div>
+
+
+        <div class="emp-table-container">
+            <div class="emp-header">
+    
+            </div>
+            <div class="emp-table">
+                <table class="create-table">
+                    <tr class="create-row">
+                        <th class="create-th">Roll.No</th>
+                        <th class="create-th">Employee Name</th>
+                        <th class="create-th">Employee.Age</th>
+                        <th class="create-th">Edit</th>
+                        <th class="create-th">Delete</th>
+                    </tr>
+                    <tbody id="taskList" class="create-tbody">
+    
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <script type="text/javascript" src="../../../index.js"></script>
+</body>
+</html>

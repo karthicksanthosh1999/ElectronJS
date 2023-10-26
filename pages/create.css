@@ -1,0 +1,56 @@
+.create-container{
+    margin: 25px;
+    border: .5px solid #000;
+}
+
+.emp-form {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.emp-input[type=text],
+.emp-input[type=number] {
+    width: 400px;
+    padding: 12px 14px;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    font-size: 1rem;
+}
+
+.emp-input[type=text]:focus {
+    border: 3px solid #555;
+}
+
+.emp-btn {
+    background-color: #0074d9;
+    color: #fff;
+    height: 50px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    width: 800px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.emp-btn:hover {
+    background-color: #418fd3;
+
+}
+
+.create-table{
+  border: 1px solid;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.create-table, .create-row, .create-th{
+    border: 1px solid;
+    text-align: left;
+    padding: 8px;
+}

@@ -1,0 +1,19 @@
+{
+    "name": "hello-world",
+    "version": "1.0.0",
+    "main": "main.js",
+    "devDependencies": {
+        "electron": "^27.0.1"
+    },
+    "scripts": {
+        "start": "electron .",
+        "watch": "nodemon --exec electron .",
+        "build": "electron-packager ."
+    },
+    "dependencies": {
+        "electron-packager": "^17.1.2",
+        "mongoose": "^7.6.3",
+        "node-sass": "^9.0.0",
+        "nodemon": "^3.0.1"
+    }
+}
